@@ -1,0 +1,16 @@
+body{
+    background-color: #1fa3d3;
+}
+
+/* Day 36 */
+
+h1{
+    color: #483abe;
+    text-align: center;
+    padding-top: 250px;
+
+    font-size: 25px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}

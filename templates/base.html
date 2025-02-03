@@ -1,0 +1,149 @@
+<!DOCTYPE html  _6 >
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Homepage - Asraful E-commerce Template</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/customise.css' %}">
+
+    <!--_13-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+    <body>
+        {% include 'navbar.html' %}
+        {% if messages %}
+            {% for message in messages %} 
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %} 
+        {% endif %}
+                
+        {% block content %}
+        {% endblock %}
+
+
+
+
+
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-start text-white">We create and design high-quality websites, including block websites, e-commerce websites, fashion websites, and various other types. Our goal is to provide modern, user-friendly, and effective designs tailored to our clients' needs, helping to improve their business growth and online presence.</p></div>
+            <br/>
+            <div class="container"><p class="m-0 text-end text-white">আমরা উচ্চমানের ওয়েবসাইট তৈরি এবং ডিজাইন করে থাকি, যার মধ্যে রয়েছে ব্লক ওয়েবসাইট, ই-কমার্স ওয়েবসাইট, ফ্যাশন ওয়েবসাইট এবং আরও বিভিন্ন ধরনের ওয়েবসাইট। আমাদের লক্ষ্য হল গ্রাহকদের প্রয়োজন অনুযায়ী আধুনিক, ব্যবহারকারী বান্ধব এবং কার্যকরী ডিজাইন প্রদান করা, যাতে তাদের ব্যবসার প্রবৃদ্ধি এবং অনলাইন উপস্থিতি উন্নত হয়।</p></div>
+            <br/>
+            <div class="container"><p class="m-0 text-center text-white">
+
+
+
+
+            <!-- Gmail -->
+            <a href="mailto:asrafulislam888zfa@gmail.com" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Gmail">
+                <i class="bi bi-envelope-fill"></i>
+            </a>
+
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/share/1B93XMG3uo/" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/asraful-islam-haoladar-32048130b/" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@asraful_islam_888" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="YouTube">
+                <i class="bi bi-youtube"></i>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://www.twitter.com" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                <i class="bi bi-twitter"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram">
+                <i class="bi bi-instagram"></i>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/AsrAfulPY" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub">
+                <i class="bi bi-github"></i>
+            </a>
+
+            <!-- Website -->
+            <a href="https://www.example.com" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Website">
+                <i class="bi bi-globe"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/qr/QPXS7RTB5WYSL1" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+
+            <!-- IMO -->
+            <a href="https://imo.im" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="IMO">
+                <i class="bi bi-chat-dots"></i>
+            </a>
+
+            <!-- Messenger -->
+            <a href="https://business.facebook.com/latest/inbox/all?bpn_id=1308017773780470&asset_id=559801647215272&nav_ref=manage_page_ap_plus_inbox_message_button&mailbox_id=&selected_item_id=100081120443282&thread_type=FB_MESSAGE" target="_blank" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Messenger">
+                <i class="bi bi-messenger"></i>
+            </a>
+
+            <!-- Phone Contact -->
+            <a href="tel:+880190211803" class="social-icon text-decoration-none" data-bs-toggle="tooltip" data-bs-placement="top" title="Call Now">
+                <i class="bi bi-telephone"></i>
+            </a>
+
+
+
+            </div>
+        </footer>
+
+        <!--আপনি চাইলে JavaScript দিয়ে card-এর উপর মাউস নিলে অ্যানিমেশন বা আলাদা স্টাইল যোগ করতে পারেন। নিচের কোডটি ব্যবহার করতে পারেন-->
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let cards = document.querySelectorAll(".card");
+        
+                cards.forEach(card => {
+                    card.addEventListener("mouseenter", function () {
+                        card.style.transform = "scale(1.08)";
+                        card.style.boxShadow = "0 12px 24px rgba(0, 0, 0, 0.25)";
+                    });
+        
+                    card.addEventListener("mouseleave", function () {
+                        card.style.transform = "scale(1)";
+                        card.style.boxShadow = "none";
+                    });
+                });
+            });
+        </script>
+        
+
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+    </body>
+
+
+</html>
+
